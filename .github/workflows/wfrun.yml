@@ -24,9 +24,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Get the action status
-        run: echo ${{ github.event.workflow_run.action }}
+        run: echo ${{ github.event.action }}
 
       # Runs a set of commands using the runners shell
       - name: Sender details
-        run: echo ${{ github.event.workflow_run.sender.login }}
+        run: echo ${{ github.event.sender.login }}
      
